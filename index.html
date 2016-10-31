@@ -7,50 +7,80 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
     <link rel="stylesheet" href="styles/main.css" media="screen" title="no title">
   </head>
   <body>
     <div class="main">
-
       <!-- home-landing page area -->
       <div class="main__home-landing container-fluid">
         <h1 class="main__home-landing__subtitle">design development</h1>
         <img class="main__home-landing__logo" src="http://placehold.it/400x400" alt="">
-        <nav class="navbar my-navbar" data-spy="affix" data-offset-top="500">
-          <ul class="nav navbar-nav main__home-landing__nav ">
-            <li class="active main__home-landing__nav--list"><a href="#">home</a></li>
-            <li class="main__home-landing__nav--list"><a href="#">work</a></li>
-            <li class="main__home-landing__nav--list"><a href="#">about</a></li>
-            <li class="main__home-landing__nav--list"><a href="#">contact</a></li>
+        <nav class="navbar my-navbar-wrapper" id="sticky-nav" data-spy="affix" data-offset-top="500">
+          <ul class="nav navbar-nav my-navbar-wrapper__nav ">
+            <li class="active my-navbar-wrapper__nav--list"><a href="#">home</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a href="#">work</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a href="#">about</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a href="#">contact</a></li>
           </ul>
         </nav>
-        <!-- <ul class="main__home-landing__nav">
-            <li class="main__home-landing__nav--list">work</li>
-            <li class="main__home-landing__nav--list">about</li>
-            <li class="main__home-landing__nav--list">contact</li>
-        </ul> -->
       </div>
 
       <!-- work-landing page area -->
       <div class="main__work-landing">
-        <div class="main__work-landing--left">
+
+        <div class="main__work-landing--left" id="sticker">
           <div class="landing-title">
             <span>Work<br>
             <a href="#">see all</a>
           </span>
-
           </div>
         </div>
+
         <div class="main__work-landing--right">
           <div class="work-item-container">
             <div class="work-item1"></div>
             <div class="work-item2"></div>
             <div class="work-item3"></div>
-
           </div>
         </div>
 
         <div class="clear"></div>
+
+      </div>
+
+      <!-- about-landing page area -->
+      <div class="main__about-landing">
+
+        <div class="main__about-landing--left">
+          <div class="landing-title">
+            <span>About</span>
+          </div>
+        </div>
+
+        <div class="main__about-landing--right">
+          <div class="about-me-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus commodo tempus risus.
+              In hac habitasse platea dictumst.
+              Morbi lorem quam, sagittis sit amet tristique at, sagittis non leo.
+              Fusce vitae velit a metus laoreet malesuada non at nisl.
+              In non dolor augue. Vivamus posuere vestibulum scelerisque.
+              Praesent varius leo eget ligula tempus vehicula.
+              Quisque purus justo, hendrerit et massa id, fermentum faucibus est.
+              Pellentesque dapibus lectus nec nisl malesuada vestibulum.
+              Aliquam ornare aliquam ligula a pretium.
+              Sed eget enim hendrerit, vehicula odio in, faucibus lectus.
+              Vestibulum gravida, odio vel congue iaculis, est eros ornare ante,
+              et volutpat augue turpis at metus.
+               Nam a nunc quam.
+            </p>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
       </div>
 
 
@@ -60,6 +90,12 @@
 
 
     </div>
+    <!-- <script>
+    $(document).ready(function(){
+      $("#sticker").sticky({topSpacing:0});
+    });
+
+    </script> -->
 
   </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Angela Alarcon Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/sticky-kit.min.js"></script>
+    <link rel="stylesheet" href="styles/main2.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div class="main">
+      <!-- home-landing page area -->
+      <div class="main__home-landing container-fluid">
+        <h1 class="main__home-landing__subtitle">design development</h1>
+        <img class="main__home-landing__logo" src="http://placehold.it/400x400" alt="">
+        <nav class="navbar my-navbar-wrapper" id="sticky-nav" data-spy="affix" data-offset-top="500">
+          <ul class="nav navbar-nav my-navbar-wrapper__nav ">
+            <li class="active my-navbar-wrapper__nav--list"><a href="#">home</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a href="#">work</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a href="#">about</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content-area">
+
+        <!-- left side: section titles -->
+        <div class="left-container ">
+
+          <!-- section title: WORK -->
+            <div class="section work-section sticky_column ">
+              <div class="section-title">
+                <span>Work<br>
+                <a href="#">see all</a>
+                </span>
+              </div>
+            </div>
+
+            <!-- section title: ABOUT -->
+            <div class="section about-section sticky_column">
+              <div class="section-title">
+                <span>About</span>
+              </div>
+            </div>
+
+            <!-- section title: CONTACT -->
+            <div class="section contact-section">
+              <div class="section-title">
+                <span>Contact</span>
+              </div>
+            </div>
+        </div>
+
+        <!-- Right side work images  -->
+        <div class="right-container">
+          <div class="work-item-container">
+            <div class="work-item1"></div>
+            <div class="work-item2"></div>
+            <div class="work-item3"></div>
+          </div>
+          <div class="about-item-container">
+            <div class="text-wrapper">
+              <h1>about me</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget finibus neque. Praesent nec placerat diam. Cras eget ligula aliquet enim molestie pellentesque. Cras condimentum aliquam diam nec ornare. Morbi suscipit, nunc eget sollicitudin sollicitudin, magna dui finibus purus, sed commodo enim ipsum non felis. Aliquam sed sapien metus. Pellentesque id felis eu lorem egestas posuere. Duis ultricies, tellus vel egestas cursus, orci odio sagittis libero, sed dignissim mi elit eu enim. Donec porttitor nibh ligula, eu placerat lacus accumsan at. Proin posuere eros massa, nec volutpat nisi scelerisque vulputate.
+              </p>
+            </div>
+          </div>
+          <div class="contact-item-container">
+            <div class="text-wrapper">
+              <h1>contact info</h1>
+              <h4>contact info item</h4>
+              <h4>contact info item</h4>
+              <h4>contact info item</h4>
+              <h4>contact info item</h4>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="clear"></div>
+
+
+        <!-- section title: THANK YOU -->
+        <div class="section ty-section">
+          <div class="section-title">
+            <span>Thank You!</span>
+          </div>
+        </div>
+
+      </div>  <!-- end of content area  -->
+    </div><!-- end of main area  -->
+
+    <script>
+    $(".sticky_column").stick_in_parent({
+      offset_top:0
+    });
+    // $("#sticky_item, #sticky_item").stick_in_parent()
+    //   .on("sticky_kit:stick", function(e) {
+    //     console.log("has stuck!", e.target);
+    //   })
+    //   .on("sticky_kit:unstick", function(e) {
+    //     console.log("has unstuck!", e.target);
+    //   });
+    </script>
+  </body>
+</html>

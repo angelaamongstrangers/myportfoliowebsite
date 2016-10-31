@@ -47,102 +47,113 @@ html, body {
   float: none !important;
   position: relative;
 }
-.main__work-landing {
-  height: 642px;
-  background-color: #eaa075;
-  margin: 0 -10px;
-  position: relative;
-}
-.main__work-landing--left {
-  width: 50%;
-  background-color: #fff;
-  height: 100%;
-  float: left;
-}
-.main__work-landing--right {
-  width: 50%;
-  position: relative;
-  height: 2000px;
-  float: left;
-  background-color: #eaa075;
-}
-.main__work-landing--right .work-item-container {
-  height: 500px;
+.main .content-area {
   width: 100%;
-  position: absolute;
 }
-.main__work-landing--right .work-item-container .work-item1 {
+.main .content-area .left-container {
+  background-color: #fff;
+  width: 50%;
+  position: relative;
+  height: 1800px;
+  float: left;
+}
+.main .content-area .left-container .section {
+  height: 650px;
+  width: 100%;
+}
+.main .content-area .left-container .work-section {
+  background-color: purple;
+}
+.main .content-area .left-container .about-section {
+  background-color: pink;
+}
+.main .content-area .left-container .contact-section {
+  background-color: orange;
+}
+.main .content-area .right-container {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  height: 2400px;
+  float: left;
+}
+.main .content-area .right-container .work-item-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.main .content-area .right-container .work-item-container .work-item1 {
   display: block;
   background: url(../images/test.jpg) no-repeat center top;
   height: 500px;
   overflow: hidden;
   background-size: Auto 500px;
 }
-.main__work-landing--right .work-item-container .work-item2 {
+.main .content-area .right-container .work-item-container .work-item2 {
   display: block;
   background: url(../images/test2.jpg) no-repeat center top;
   height: 500px;
   overflow: hidden;
   background-size: Auto 500px;
 }
-.main__work-landing--right .work-item-container .work-item3 {
+.main .content-area .right-container .work-item-container .work-item3 {
   display: block;
   background: url(../images/test3.jpg) no-repeat center top;
   height: 500px;
   overflow: hidden;
   background-size: Auto 500px;
 }
-.main__about-landing {
-  height: 642px;
-  background-color: #eaa075;
-  margin: 0 -10px;
-  position: relative;
-}
-.main__about-landing--left {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-.main__about-landing--right {
-  width: 50%;
-  position: relative;
+.main .content-area .right-container .about-item-container {
   height: 600px;
-  float: left;
-  background-color: #fff;
-}
-.main__about-landing--right .about-me-content p {
-  font-size: 1em;
+  width: 100%;
+  background-color: #eaa075;
   text-align: center;
+  font-size: 1em;
+  margin: -2px auto;
 }
-
-.landing-title {
+.main .content-area .right-container .contact-item-container {
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  margin: -2px auto;
+  color: #fff;
+}
+.main .content-area .ty-section {
+  width: 100%;
+  height: 600px;
+  background-color: #eaa075;
+}
+.main .section-title {
   text-align: center;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  border: black 2px solid;
 }
-.landing-title span {
+.main .section-title span {
   font-size: 2em;
 }
-
-.clear {
+.main .clear {
   clear: both;
 }
-
-.my-navbar-wrapper.affix {
+.main .text-wrapper {
+  padding: 150px 80px;
+}
+.main .is_stuck {
+  top: -20px;
+}
+.main .my-navbar-wrapper.affix {
   top: 0;
   width: 100%;
   position: fixed !important;
   z-index: 1000;
 }
-
-.my-navbar-wrapper.affix-top {
+.main .my-navbar-wrapper.affix-top {
   top: 0;
   width: 100%;
 }
-
-.my-navbar-wrapper.affix + .container-fluid {
+.main .my-navbar-wrapper.affix + .container-fluid {
   padding-top: 70px;
 }
